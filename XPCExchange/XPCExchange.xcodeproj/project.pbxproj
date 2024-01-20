@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCDAC2F72B5C446A0000B11D /* XPCExchangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC2F62B5C446A0000B11D /* XPCExchangeApp.swift */; };
+		CCDAC2F92B5C446A0000B11D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC2F82B5C446A0000B11D /* ContentView.swift */; };
+		CCDAC2FB2B5C446B0000B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDAC2FA2B5C446B0000B11D /* Assets.xcassets */; };
+		CCDAC2FE2B5C446B0000B11D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDAC2FD2B5C446B0000B11D /* Preview Assets.xcassets */; };
+		CCDAC30B2B5C44A60000B11D /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDAC30A2B5C44A60000B11D /* UniformTypeIdentifiers.framework */; };
+		CCDAC30E2B5C44A60000B11D /* FileProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC30D2B5C44A60000B11D /* FileProviderExtension.swift */; };
+		CCDAC3102B5C44A60000B11D /* FileProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC30F2B5C44A60000B11D /* FileProviderItem.swift */; };
+		CCDAC3122B5C44A60000B11D /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC3112B5C44A60000B11D /* FileProviderEnumerator.swift */; };
+		CCDAC3172B5C44A60000B11D /* CentralExchange.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CCDAC3082B5C44A60000B11D /* CentralExchange.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCDAC31D2B5C45890000B11D /* NSFileProviderItemIdentifier+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC31C2B5C45890000B11D /* NSFileProviderItemIdentifier+Common.swift */; };
+		CCDAC31F2B5C48F00000B11D /* XPCEndpointsServiceSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC31E2B5C48F00000B11D /* XPCEndpointsServiceSource.swift */; };
+		CCDAC3212B5C49510000B11D /* XPCEndpointsServiceListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC3202B5C49510000B11D /* XPCEndpointsServiceListener.swift */; };
+		CCDAC3232B5C4A460000B11D /* XPCEndpointsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC3222B5C4A460000B11D /* XPCEndpointsService.swift */; };
+		CCDAC3252B5C4C6D0000B11D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC3242B5C4C6D0000B11D /* ContentViewModel.swift */; };
+		CCDAC3272B5C4D780000B11D /* XPCEndpointsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC3262B5C4D780000B11D /* XPCEndpointsServiceProtocol.swift */; };
+		CCDAC3282B5C4D800000B11D /* XPCEndpointsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC3262B5C4D780000B11D /* XPCEndpointsServiceProtocol.swift */; };
+		CCDAC3482B5C553F0000B11D /* TextTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAC3472B5C553F0000B11D /* TextTransferService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCDAC3152B5C44A60000B11D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCDAC2EB2B5C446A0000B11D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCDAC3072B5C44A60000B11D;
+			remoteInfo = CentralExchange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCDAC31B2B5C44A60000B11D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CCDAC3172B5C44A60000B11D /* CentralExchange.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CCDAC2F32B5C446A0000B11D /* XPCExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPCExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDAC2F62B5C446A0000B11D /* XPCExchangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCExchangeApp.swift; sourceTree = "<group>"; };
+		CCDAC2F82B5C446A0000B11D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CCDAC2FA2B5C446B0000B11D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCDAC2FD2B5C446B0000B11D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCDAC3082B5C44A60000B11D /* CentralExchange.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CentralExchange.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDAC30A2B5C44A60000B11D /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		CCDAC30D2B5C44A60000B11D /* FileProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderExtension.swift; sourceTree = "<group>"; };
+		CCDAC30F2B5C44A60000B11D /* FileProviderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderItem.swift; sourceTree = "<group>"; };
+		CCDAC3112B5C44A60000B11D /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
+		CCDAC3132B5C44A60000B11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDAC3142B5C44A60000B11D /* CentralExchange.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CentralExchange.entitlements; sourceTree = "<group>"; };
+		CCDAC31C2B5C45890000B11D /* NSFileProviderItemIdentifier+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSFileProviderItemIdentifier+Common.swift"; sourceTree = "<group>"; };
+		CCDAC31E2B5C48F00000B11D /* XPCEndpointsServiceSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCEndpointsServiceSource.swift; sourceTree = "<group>"; };
+		CCDAC3202B5C49510000B11D /* XPCEndpointsServiceListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCEndpointsServiceListener.swift; sourceTree = "<group>"; };
+		CCDAC3222B5C4A460000B11D /* XPCEndpointsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCEndpointsService.swift; sourceTree = "<group>"; };
+		CCDAC3242B5C4C6D0000B11D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CCDAC3262B5C4D780000B11D /* XPCEndpointsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCEndpointsServiceProtocol.swift; sourceTree = "<group>"; };
+		CCDAC3472B5C553F0000B11D /* TextTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTransferService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCDAC2F02B5C446A0000B11D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDAC3052B5C44A60000B11D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDAC30B2B5C44A60000B11D /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCDAC2EA2B5C446A0000B11D = {
+			isa = PBXGroup;
+			children = (
+				CCDAC2F52B5C446A0000B11D /* XPCExchange */,
+				CCDAC30C2B5C44A60000B11D /* CentralExchange */,
+				CCDAC3092B5C44A60000B11D /* Frameworks */,
+				CCDAC2F42B5C446A0000B11D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCDAC2F42B5C446A0000B11D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAC2F32B5C446A0000B11D /* XPCExchange.app */,
+				CCDAC3082B5C44A60000B11D /* CentralExchange.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCDAC2F52B5C446A0000B11D /* XPCExchange */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAC2F62B5C446A0000B11D /* XPCExchangeApp.swift */,
+				CCDAC2F82B5C446A0000B11D /* ContentView.swift */,
+				CCDAC3242B5C4C6D0000B11D /* ContentViewModel.swift */,
+				CCDAC3472B5C553F0000B11D /* TextTransferService.swift */,
+				CCDAC2FA2B5C446B0000B11D /* Assets.xcassets */,
+				CCDAC2FC2B5C446B0000B11D /* Preview Content */,
+			);
+			path = XPCExchange;
+			sourceTree = "<group>";
+		};
+		CCDAC2FC2B5C446B0000B11D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAC2FD2B5C446B0000B11D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CCDAC3092B5C44A60000B11D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAC30A2B5C44A60000B11D /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCDAC30C2B5C44A60000B11D /* CentralExchange */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAC30D2B5C44A60000B11D /* FileProviderExtension.swift */,
+				CCDAC30F2B5C44A60000B11D /* FileProviderItem.swift */,
+				CCDAC31C2B5C45890000B11D /* NSFileProviderItemIdentifier+Common.swift */,
+				CCDAC3112B5C44A60000B11D /* FileProviderEnumerator.swift */,
+				CCDAC31E2B5C48F00000B11D /* XPCEndpointsServiceSource.swift */,
+				CCDAC3202B5C49510000B11D /* XPCEndpointsServiceListener.swift */,
+				CCDAC3222B5C4A460000B11D /* XPCEndpointsService.swift */,
+				CCDAC3262B5C4D780000B11D /* XPCEndpointsServiceProtocol.swift */,
+				CCDAC3132B5C44A60000B11D /* Info.plist */,
+				CCDAC3142B5C44A60000B11D /* CentralExchange.entitlements */,
+			);
+			path = CentralExchange;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCDAC2F22B5C446A0000B11D /* XPCExchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCDAC3012B5C446B0000B11D /* Build configuration list for PBXNativeTarget "XPCExchange" */;
+			buildPhases = (
+				CCDAC2EF2B5C446A0000B11D /* Sources */,
+				CCDAC2F02B5C446A0000B11D /* Frameworks */,
+				CCDAC2F12B5C446A0000B11D /* Resources */,
+				CCDAC31B2B5C44A60000B11D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCDAC3162B5C44A60000B11D /* PBXTargetDependency */,
+			);
+			name = XPCExchange;
+			productName = XPCExchange;
+			productReference = CCDAC2F32B5C446A0000B11D /* XPCExchange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCDAC3072B5C44A60000B11D /* CentralExchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCDAC3182B5C44A60000B11D /* Build configuration list for PBXNativeTarget "CentralExchange" */;
+			buildPhases = (
+				CCDAC3042B5C44A60000B11D /* Sources */,
+				CCDAC3052B5C44A60000B11D /* Frameworks */,
+				CCDAC3062B5C44A60000B11D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CentralExchange;
+			productName = CentralExchange;
+			productReference = CCDAC3082B5C44A60000B11D /* CentralExchange.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCDAC2EB2B5C446A0000B11D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CCDAC2F22B5C446A0000B11D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					CCDAC3072B5C44A60000B11D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = CCDAC2EE2B5C446A0000B11D /* Build configuration list for PBXProject "XPCExchange" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCDAC2EA2B5C446A0000B11D;
+			productRefGroup = CCDAC2F42B5C446A0000B11D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCDAC2F22B5C446A0000B11D /* XPCExchange */,
+				CCDAC3072B5C44A60000B11D /* CentralExchange */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCDAC2F12B5C446A0000B11D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDAC2FE2B5C446B0000B11D /* Preview Assets.xcassets in Resources */,
+				CCDAC2FB2B5C446B0000B11D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDAC3062B5C44A60000B11D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCDAC2EF2B5C446A0000B11D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDAC2F92B5C446A0000B11D /* ContentView.swift in Sources */,
+				CCDAC3482B5C553F0000B11D /* TextTransferService.swift in Sources */,
+				CCDAC2F72B5C446A0000B11D /* XPCExchangeApp.swift in Sources */,
+				CCDAC3282B5C4D800000B11D /* XPCEndpointsServiceProtocol.swift in Sources */,
+				CCDAC3252B5C4C6D0000B11D /* ContentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDAC3042B5C44A60000B11D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDAC30E2B5C44A60000B11D /* FileProviderExtension.swift in Sources */,
+				CCDAC3102B5C44A60000B11D /* FileProviderItem.swift in Sources */,
+				CCDAC3272B5C4D780000B11D /* XPCEndpointsServiceProtocol.swift in Sources */,
+				CCDAC3212B5C49510000B11D /* XPCEndpointsServiceListener.swift in Sources */,
+				CCDAC31D2B5C45890000B11D /* NSFileProviderItemIdentifier+Common.swift in Sources */,
+				CCDAC3232B5C4A460000B11D /* XPCEndpointsService.swift in Sources */,
+				CCDAC31F2B5C48F00000B11D /* XPCEndpointsServiceSource.swift in Sources */,
+				CCDAC3122B5C44A60000B11D /* FileProviderEnumerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCDAC3162B5C44A60000B11D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCDAC3072B5C44A60000B11D /* CentralExchange */;
+			targetProxy = CCDAC3152B5C44A60000B11D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CCDAC2FF2B5C446B0000B11D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCDAC3002B5C446B0000B11D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCDAC3022B5C446B0000B11D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"XPCExchange/Preview Content\"";
+				DEVELOPMENT_TEAM = PP4C5TR737;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.cerio.XPCExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		CCDAC3032B5C446B0000B11D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"XPCExchange/Preview Content\"";
+				DEVELOPMENT_TEAM = PP4C5TR737;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.cerio.XPCExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		CCDAC3192B5C44A60000B11D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CentralExchange/CentralExchange.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP4C5TR737;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CentralExchange/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CentralExchange;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.cerio.XPCExchange.CentralExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		CCDAC31A2B5C44A60000B11D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CentralExchange/CentralExchange.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP4C5TR737;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CentralExchange/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CentralExchange;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.cerio.XPCExchange.CentralExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCDAC2EE2B5C446A0000B11D /* Build configuration list for PBXProject "XPCExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDAC2FF2B5C446B0000B11D /* Debug */,
+				CCDAC3002B5C446B0000B11D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCDAC3012B5C446B0000B11D /* Build configuration list for PBXNativeTarget "XPCExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDAC3022B5C446B0000B11D /* Debug */,
+				CCDAC3032B5C446B0000B11D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCDAC3182B5C44A60000B11D /* Build configuration list for PBXNativeTarget "CentralExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDAC3192B5C44A60000B11D /* Debug */,
+				CCDAC31A2B5C44A60000B11D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCDAC2EB2B5C446A0000B11D /* Project object */;
+}
