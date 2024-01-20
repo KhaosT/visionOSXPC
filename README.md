@@ -16,3 +16,4 @@ I guess technically you can also use socket once you involves a file but NSXPC i
 
 For each app, to perform the initial setup, you select the `Connect` option, and that opens the file picker. From there, navigate to the `XPCExchange` and select `Endpoints` file so we have the URL we can call to get the `NSFileProviderService`.
 
+![Simulator Screenshot - Apple Vision Pro - 2024-01-20 at 12 13 49](https://github.com/KhaosT/visionOSXPC/assets/1725664/232eeb14-49d9-48dc-8a71-437a4fcf5772)
